@@ -1,5 +1,5 @@
 # Multi-stage build for OCR API
-FROM python:3.11-slim as builder
+FROM python:3.11-slim AS builder
 
 WORKDIR /build
 
@@ -25,8 +25,6 @@ WORKDIR /app
 
 # Install system dependencies for runtime
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libmupdf1 \
-    libpoppler-cpp0 \
     tesseract-ocr \
     && rm -rf /var/lib/apt/lists/*
 

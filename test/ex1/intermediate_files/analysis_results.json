@@ -1,0 +1,215 @@
+{
+  "input_folder": "data/leongross/organized_contrat_decennale/08e88300-6571-4f04-a141-c65468396b69",
+  "files_processed": 2,
+  "merged_json_path": "data/leongross/organized_contrat_decennale/08e88300-6571-4f04-a141-c65468396b69/merged_documents.json",
+  "ai_response": {
+    "documents": [
+      {
+        "document_id": "leongross_contrat_12bafb85-edbf-4b94-8de3-aab781a5fb9a-0gmknkvMmQ8f6muv0ARE6A-1768849254.pdf",
+        "document_type": "avenant_contrat_sous_traitance",
+        "document_language": "francais",
+        "summary": {
+          "objet": "Avenant N°11 à la commande de travaux en sous-traitance",
+          "parties_identifiees": "ENTREPRISE GENERALE LEON GROSSE (Entrepreneur Principal) et R2G SAS (Sous-traitant)",
+          "dates_cles": {
+            "signature": "22/09/2025",
+            "debut_travaux": "07/01/2026",
+            "fin_travaux": "08/01/2026"
+          },
+          "montants": {
+            "ht_total": "29 025,50 €",
+            "retenue_garantie": "0 %",
+            "prorata_forfaitise": "0 %"
+          },
+          "obligations_principales": {
+            "description_travaux": "Dépose, manutention, placo et peinture",
+            "reference": "Ordre de Service N° A002CDA000018678 (257)"
+          },
+          "duree_et_conditions": {
+            "duree": "Courte durée (exécution entre le 07/01/2026 et 08/01/2026)",
+            "renonciation_recours": "Implicite sur les réclamations liées à des faits antérieurs à la signature de l'avenant"
+          },
+          "points_administratifs_importants": [
+            {
+              "type": "certification",
+              "contenu": "Attestation d'assurance RC Décennale incluse"
+            },
+            {
+              "type": "renonciation",
+              "contenu": "Renonciation à tout recours pour les faits antérieurs"
+            },
+            {
+              "type": "obligation",
+              "contenu": "Interdiction de toute réclamation supplémentaire post-signature"
+            }
+          ]
+        },
+        "incoherences_internes": [
+          {
+            "id": "date_execution_travaux",
+            "type": "incoherence_date",
+            "gravite": "elevee",
+            "localisation": "section '6 - DÉLAI D'EXECUTION'",
+            "description": "La durée d'exécution du chantier est extrêmement courte (07/01/2026 à 08/01/2026), ce qui semble incompatible avec les travaux décrits (dépose, manutention, placo et peinture).",
+            "impact_metier": "Risque de non-respect des délais techniques ou de qualité des prestations.",
+            "recommandation": "Clarifier la durée réelle de prestation et vérifier la faisabilité technique."
+          },
+          {
+            "id": "renonciation_recours",
+            "type": "non_conformite",
+            "gravite": "moyenne",
+            "localisation": " Article 'Le sous-traitant renonce à tout recours et réclamations pour les faits antérieurs...'",
+            "description": "L'avenant inclut une renonciation à des recours pour les faits antérieurs, ce qui va à l'encontre des bonnes pratiques contractuelles de mise en avant des obligations de l'entrepreneur principal.",
+            "impact_metier": "Potentiel déséquilibre contractuel entre les parties.",
+            "recommandation": "Réviser la clause pour éviter toute interprétation défavorable."
+          }
+        ],
+        "conclusion": "L'avenant décrit un projet de sous-traitance de peinture et placo, avec un calendrier très serré et des conditions contractuelles déséquilibrées. Des incohérences dans les dates d’exécution et l’obligation de renonciation aux recours antérieurs sont à signaler."
+      },
+      {
+        "document_id": "leongross_decennale_alg-0116319c-5557-41da-9ed9-b503cde1d002.pdf",
+        "document_type": "attestation_assurance_decennale",
+        "document_language": "francais",
+        "summary": {
+          "objet": "Attestation d'assurance Responsabilité Civile Décennale (RC Décennale) pour R2G SAS",
+          "parties_identifiees": {
+            "assureur": "QBE Europe SA/NV - succursale française",
+            "assure": "R2G SAS (RADOUANE CHIKHI)",
+            "intermediaire": "SOLLY AZAR SAS"
+          },
+          "dates_cles": {
+            "validite": {
+              "debut": "01/01/2026",
+              "fin": "31/12/2026"
+            },
+            "date_attestation": "18/12/2025",
+            "date_ouverture_chantier": "Non spécifiée"
+          },
+          "montants": {
+            "cotisation_ttc": "2 948,30 €",
+            "franchise": "2 500 €",
+            "montant_garantie": "7 500 000 € par sinistre"
+          },
+          "obligations_principales": {
+            "activites_couvertes": [
+              {
+                "code": "4.5",
+                "description": "Peinture (excluant imperméabilisation et étanchéité des façades)"
+              },
+              {
+                "code": "4.2",
+                "description": "Plâtrerie-Staff-Stuc-Gypserie"
+              },
+              {
+                "code": "5.1",
+                "description": "Plomberie-Installations sanitaires"
+              },
+              {
+                "code": "5.5",
+                "description": "Electricité"
+              },
+              {
+                "code": "4.6",
+                "description": "Revêtements de surfaces en matériaux souples et parquets"
+              },
+              {
+                "code": "2.2",
+                "description": "Mâconnerie et béton armé (sauf précontraint in situ)"
+              }
+            ],
+            "dommages_couverts": [
+              {
+                "type": "Responsabilité Décennale",
+                "description": "Conformément aux articles 1792 et suivants du Code Civil."
+              },
+              {
+                "type": "Responsabilité Décennale Sous-traitant",
+                "description": "Garantie en qualité de sous-traitant pour les dommages de même nature."
+              }
+            ],
+            "limites": {
+              "coût_ouvrage_habitation": "Inférieur à 15 000 000 €",
+              "coût_ouvrage_genie_civil": "Inférieur à 3 000 000 €"
+            }
+          },
+          "duree_et_conditions": {
+            "garantie": "Assurée pendant toute la durée de la responsabilité décennale en cours d'exécution (art. 1792 et suivants).",
+            "conditions_financieres": "Cotisation annuelle à payer en quatre versements trimestriels."
+          },
+          "points_administratifs_importants": [
+            {
+              "type": "mandat",
+              "contenu": "Souscription du contrat par SOLLY AZAR SAS dans le cadre d'un mandat délégué par QBE."
+            },
+            {
+              "type": "intermediaire",
+              "contenu": "SOLLY AZAR est autorisé à signer les documents pour QBE."
+            },
+            {
+              "type": "conformite",
+              "contenu": "Conformité à la nomenclature des assureurs pour les activités du BTP."
+            }
+          ]
+        },
+        "incoherences_internes": [],
+        "conclusion": "L'attestation couvre les activités du sous-traitant pour la période 2026 (peinture, placo, plomberie, etc.) et respecte les exigences du code civil. Le montant de garantie est conforme aux standards du secteur."
+      }
+    ],
+    "incoherences_croisees": [
+      {
+        "id": "activites_garantie_et_perimetre_travaux",
+        "documents_concernes": [
+          "leongross_contrat_12bafb85-edbf-4b94-8de3-aab781a5fb9a-0gmknkvMmQ8f6muv0ARE6A-1768849254.pdf",
+          "leongross_decennale_alg-0116319c-5557-41da-9ed9-b503cde1d002.pdf"
+        ],
+        "type": "assurance",
+        "gravite": "moyenne",
+        "description": "Les activités décrites dans l'avenant (peinture et placo) correspondent partiellement à celles couvertes par l'attestation d'assurance décennale. La garantie peinture exclut spécifiquement l'étanchéité des façades, mais inclut la partie 'peinture'. Cependant, l'attestation couvre également des activités non évoquées dans l'avenant (plomberie, électricité, etc.).",
+        "impact_metier": "Possibilité de confusion sur le périmètre réel des activités garanties, et risque juridique si des activités non listées dans l'avenant sont exécutées.",
+        "recommandation": "Expliciter les activités couvertes dans l'avenant pour correspondre strictement à la couverture d'assurance."
+      },
+      {
+        "id": "date_ouverture_chantier",
+        "documents_concernes": [
+          "leongross_contrat_12bafb85-edbf-4b94-8de3-aab781a5fb9a-0gmknkvMmQ8f6muv0ARE6A-1768849254.pdf",
+          "leongross_decennale_alg-0116319c-5557-41da-9ed9-b503cde1d002.pdf"
+        ],
+        "type": "date",
+        "gravite": "moyenne",
+        "description": "L'avenant mentionne une date de début des travaux (07/01/2026) et une date de fin (08/01/2026), mais l'attestation d'assurance ne précise pas la date exacte d'ouverture du chantier pour la couverture décennale. Cela peut poser problème pour vérifier que le chantier commence sous la couverture assurantielle valide.",
+        "impact_metier": "Risque d'absence de couverture si l'ouverture de chantier n'est pas alignée avec la période d'assurance.",
+        "recommandation": "Préciser la date exacte d'ouverture du chantier dans l'avenant et s'assurer de son alignement avec la période de validité de l'assurance."
+      },
+      {
+        "id": "duree_chantier_et_assurance",
+        "documents_concernes": [
+          "leongross_contrat_12bafb85-edbf-4b94-8de3-aab781a5fb9a-0gmknkvMmQ8f6muv0ARE6A-1768849254.pdf",
+          "leongross_decennale_alg-0116310c-5557-41da-9ed9-b503cde1d002.pdf"
+        ],
+        "type": "date",
+        "gravite": "elevee",
+        "description": "La durée d'exécution mentionnée dans l'avenant (07/01/2026 au 08/01/2026) est extrêmement courte et semble incompatible avec la nature des prestations détaillées. Ceci pourrait remettre en cause l'adéquation entre la durée des travaux et la couverture d'assurance décennale, qui couvre une durée de 10 ans.",
+        "impact_metier": "Risque que les prestations ne soient pas couvertes correctement par l'assurance RC décennale.",
+        "recommandation": "Corriger la durée d'exécution pour refléter les activités réalisées et s'assurer que la couverture d'assurance est adaptée à la réalité des travaux."
+      }
+    ],
+    "controle_assurance_decennale": {
+      "activite_declaree": "Dépose, manutention, placo et peinture (mentionné dans l'avenant de contrat)",
+      "activites_couvertes_assurance": [
+        "Peinture (4.5)",
+        "Plâtrerie-Staff-Stuc-Gypserie (4.2)",
+        "Revêtements de surfaces en matériaux souples (4.6)"
+      ],
+      "statut_coherence": "partiellement_coherent",
+      "expiration_police": "valide",
+      "analyse_detaillee": "L'activité déclarée dans l'avenant inclut la peinture et le placo, qui sont couvertes par l'assurance décennale. Cependant, certains éléments comme la 'manutention' et 'dépose' ne sont pas explicitement mentionnés dans la couverture. De plus, l'assurance couvre d'autres activités (plomberie, électricité) non mentionnées dans l'avenant. Cela crée une ambiguïté sur le périmètre des prestations garanties.",
+      "risque_identifie": "moyen",
+      "recommandation": "Clarifier le périmètre exact des activités couvertes dans le contrat de sous-traitance pour éviter toute ambiguïté et ajuster les activités garanties par l'assurance. Ajouter une mention explicite concernant la couverture des activités de 'manutention' et 'dépose'."
+    },
+    "score_coherence_global": {
+      "note_sur_100": 55,
+      "justification": "Incohérences importantes pour les dates d'exécution et le périmètre d'activités, particulièrement entre l'avenant et l'assurance décennale. Le périmètre d'activités garanties ne correspond pas exactement aux prestations déclarées, et la durée extrêmement courte des travaux soulève des questions sur leur faisabilité technique et juridique."
+    },
+    "conclusion_globale": "L'ensemble des documents présente un risque modéré lié à une incohérence entre les activités déclarées dans l'avenant de contrat et celles couvertes par l'assurance décennale. La courte période d'exécution mentionnée ne correspond pas à la nature des travaux ni à la durée de garantie décennale. Il est recommandé d'apporter des clarifications sur la durée réelle des travaux, les activités à couvrir et de s'assurer que la couverture d'assurance est strictement alignée sur le périmètre contractuel."
+  }
+}

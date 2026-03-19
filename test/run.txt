@@ -1,0 +1,15 @@
+# ============================================================
+# RUN WITH DOCKER (Tested and Working)
+# ============================================================
+
+# Default: process all PDFs in test/ex1/input/
+docker run --rm -v $(pwd):/workspace -w /workspace api-classic-ocr-engine python3 test/test_pdf_processing.py
+
+# Specific file - contrat
+docker run --rm -v $(pwd):/workspace -w /workspace api-classic-ocr-engine python3 test/test_pdf_processing.py test/ex1/input/leongross_contrat_12bafb85-edbf-4b94-8de3-aab781a5fb9a-0gmknkvMmQ8f6muv0ARE6A-1768849254.pdf
+
+# Specific file - decennale
+docker run --rm -v $(pwd):/workspace -w /workspace api-classic-ocr-engine python3 test/test_pdf_processing.py test/ex1/input/leongross_decennale_alg-0116319c-5557-41da-9ed9-b503cde1d002.pdf
+
+# Multiple files (both)
+docker run --rm -v $(pwd):/workspace -w /workspace api-classic-ocr-engine python3 test/test_pdf_processing.py test/ex1/input/leongross_contrat_*.pdf test/ex1/input/leongross_decennale_*.pdf
