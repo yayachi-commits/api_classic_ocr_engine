@@ -23,7 +23,7 @@ A FastAPI-based microservice for document OCR and text extraction. Supports PDF,
 
 1. Clone the repository:
 ```bash
-cd ~/api_classic_ocr_engine
+cd ~/docs_ocr_engine
 ```
 
 2. Create and activate virtual environment:
@@ -119,7 +119,7 @@ docker run -p 9003:9003 \
 ## Project Structure
 
 ```
-api_classic_ocr_engine/
+docs_ocr_engine/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py              # ASGI entrypoint
