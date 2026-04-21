@@ -6,8 +6,6 @@ WORKDIR /build
 # Install system dependencies for building
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
-    libmupdf-dev \
-    libpoppler-cpp-dev \
     tesseract-ocr \
     && rm -rf /var/lib/apt/lists/*
 
@@ -33,11 +31,10 @@ COPY --from=builder /build/wheels /wheels
 COPY --from=builder /build/requirements.txt .
 
 # Install Python dependencies from wheels
-RUN pip install --no-cache /wheels/*
+RUN pip install --no-cache-dir /wheels/*
 
 # Copy application code
 COPY app /app/app
-COPY config /app/config
 
 # Create non-root user
 RUN useradd -m -u 1000 appuser && chown -R appuser:appuser /app
